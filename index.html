@@ -93,6 +93,7 @@
 
 			</script> It sure is fun create websites.</p>
 	</footer>
+	<!--
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('a[href^="#"]').on('click', function(e) {
@@ -107,6 +108,26 @@
 					window.location.hash = target - 76;
 				});
 			});
+		});
+
+	</script>
+-->
+	<script>
+		jQuery(function($) {
+
+			// The speed of the scroll in milliseconds
+			var speed = 1000;
+
+			// Find links that are #anchors and scroll to them
+			$('a[href^=#]')
+				.not('.lp-pom-form .lp-pom-button')
+				.unbind('click.smoothScroll')
+				.bind('click.smoothScroll', function(event) {
+					event.preventDefault();
+					$('html, body').animate({
+						scrollTop: $($(this).attr('href')).offset().top - 50
+					}, speed);
+				});
 		});
 
 	</script>
