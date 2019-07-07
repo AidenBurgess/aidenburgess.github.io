@@ -266,9 +266,13 @@ Projects
 	color: #131633;
 	padding: 20px;
 	border-radius: 3px;
-	background-clip: content-box;
+	/*	background-clip: content-box;*/
 	background-size: cover;
 	background-position: center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	max-width: 1200px;
 }
 
 #projects .project {
@@ -276,6 +280,8 @@ Projects
 	margin: 1em;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #projects .project:hover {
@@ -304,7 +310,7 @@ Projects
 }
 
 #projects .project-img {
-	height: 500px;
+	height: 400px;
 	margin: auto;
 	width: 100%;
 }
@@ -317,6 +323,7 @@ Projects
 
 
 #projects .project-links {
+	margin-top: 20px;
 	height: 5em;
 	text-align: center;
 	justify-content: center;
@@ -338,7 +345,11 @@ Projects
 	line-height: 2;
 }
 
-@media(max-width:1000px) {}
+@media(max-width:850px) {
+	#projects .project {
+		flex-direction: column;
+	}
+}
 
 /* -----------------------------
 FOOTER
