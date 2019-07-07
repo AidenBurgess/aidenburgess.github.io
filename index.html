@@ -1,0 +1,107 @@
+<!DOCTYPE htrml>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aiden Burgess Portfolio</title>
+	<link rel="shortcut icon" type="image/ico" href="">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
+	<link rel="stylesheet" , href="styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<style>
+
+	</style>
+</head>
+
+<body id="top">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#top">Top</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- **************************************** -->
+	<div id="hero">
+		<div class="background-image"></div>
+		<h1>Aiden Burgess</h1>
+		<h3>2nd Year Software Engineering Student</h3>
+		<div class="btns">
+			<a href="https://github.com/AidenBurgess" class="btn" target="_blank"> <i class="far fa-eye"></i> See Projects</a>
+			<a href="cv.pdf" class="btn" target="_blank"> <i class="fa fa-download"></i> Download Resume</a>
+		</div>
+	</div>
+	<!-- **************************************** -->
+	<div id="about">
+		<h3 class="title">About Me</h3>
+		<div id="two-cols">
+			<div class="about-img"><img src="" alt="thumbs up"></div>
+			<div class="about-bio">
+				<p>Silent movie fanatic, skateboarder, bottle cap collector, hand letterer and art school grad. Holistic content curator branding thought responsive leadership. Maker at the sweet spot between simplicity and intellectual purity to answer design problems with honest solutions. I work with Fortune 500 companies and startups at the junction of art and computer science to give life to your brand.</p>
+			</div>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+	<!-- **************************************** -->
+	<section id="projects">
+		<!--Compound Calculator-->
+		<div id="compound-calc" class="project">
+			<div class='project-img'><img src='img/compound.png'></div>
+			<div class="side-content">
+				<h3 class='project-title'>Compound Calculator</h3>
+				<p class='project-desc'>A personal project, written in python, utilising the Tkinter and Matplotlib frameworks. Can calculate complex combinations of interest rates, contribution amounds and timings, and years.</p>
+			</div>
+			<div class='project-links'>
+				<a href="https://www.github.com/aidenburgess/" class="btn" target="_blank"><i class="fas fa-code"></i> Source Code </a>
+				<a href="https://www.linkedin.com/in/aidenburgess/" class="btn" target="_blank"><i class="far fa-image"></i> View Project Photos </a>
+			</div>
+		</div>
+		<!--Cross Game-->
+		<div id='cross-game' class="project">
+			<div class='project-img'><img src="img/cross.png"></div>
+			<div class="side-content">
+				<h3 class='project-title'>Cross Game</h3>
+				<p class='project-desc'>A personal project, written in python, utilising the Tkinter and Matplotlib frameworks. Can calculate complex combinations of interest rates, contribution amounds and timings, and years.</p>
+			</div>
+			<div class='project-links'>
+				<a href="https://www.github.com/aidenburgess/" class="btn" target="_blank"><i class="fas fa-code"></i> Source Code </a>
+				<a href="https://www.linkedin.com/in/aidenburgess/" class="btn" target="_blank"><i class="far fa-image"></i> View Project Photos </a>
+			</div>
+		</div>
+
+	</section>
+	<!-- **************************************** -->
+	<footer id="contact">
+		<ul>
+			<li><a href="https://www.linkedin.com/in/aidenburgess/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="https://github.com/AidenBurgess" target="_blank"><i class="fab fa-github"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+
+		</ul>
+		<p>&copy; <script>
+				document.write(new Date().getFullYear());
+			</script> It sure is fun create websites.</p>
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('a[href^="#"]').on('click', function(e) {
+				e.preventDefault();
+
+				var target = this.hash;
+				var $target = $(target);
+
+				$('html, body').stop().animate({
+					'scrollTop': $target.offset().top - 76
+				}, 800, 'swing', function() {
+					window.location.hash = target - 76;
+				});
+			});
+		});
+	</script>
+</body></html>
