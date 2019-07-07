@@ -52,6 +52,22 @@ hr {
 	margin: 40px auto;
 }
 
+a.btn {
+	color: white;
+	background-color: #131633;
+	text-decoration: none;
+	padding: 0.6em 1em;
+	margin: 1em;
+	border-radius: 0.5em;
+	text-align: center;
+	opacity: 1;
+}
+
+a.btn:hover {
+	background-color: #2196f3;
+	text-decoration: underline;
+}
+
 /* -----------------------------
 HEADER
 ------------------------------*/
@@ -160,16 +176,11 @@ HERO
 }
 
 #hero a.btn {
-	color: white;
-	background-color: #131633;
 	text-decoration: none;
 	padding: 0.6em 1em;
 	margin: 1em;
 	border-radius: 0.5em;
-	text-transform: uppercase;
 	text-align: center;
-	opacity: 1;
-	border: 2px solid white;
 }
 
 #hero a.btn:hover {
@@ -296,7 +307,6 @@ Projects
 
 #projects .project-links {
 	height: 5em;
-	background-color: black;
 	text-align: center;
 	justify-content: center;
 }
@@ -304,6 +314,12 @@ Projects
 #projects .project-links a {
 	padding: 20px;
 }
+
+#projects a.btn {
+	padding: 1em;
+}
+
+#projects a.btn:hover {}
 
 
 #projects p {
