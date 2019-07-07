@@ -109,7 +109,7 @@ header nav ul {
 }
 
 header nav li {
-	margin: 0 6px;
+	margin: 0 15px;
 
 }
 
@@ -237,6 +237,7 @@ ABOUT
 .about-bio {
 	width: 65%;
 	max-height: 800px;
+	max-width: 1200px;
 	line-height: 2;
 	margin-left: 20px;
 }
@@ -281,7 +282,7 @@ Projects
 }
 
 #projects .project:hover {
-	box-shadow: 5px #888888;
+	box-shadow: 50px #888888;
 }
 
 #projects .project-title {
@@ -316,12 +317,27 @@ Projects
 	padding: 0.8em 0.8em;
 	height: 8em;
 	text-align: justify;
+	list-style-type: circle;
 }
 
+#projects ul {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto 35px;
+	padding: 0 20px;
+	line-height: 1.6;
+}
+
+#projects .project-desc li {
+	margin-left: 15px;
+}
 
 #projects .project-links {
-	margin-top: 20px;
+	font-size: 1em;
+	margin-top: 60px;
 	height: 5em;
+	display: flex;
+	flex-direction: row;
 	text-align: center;
 	justify-content: center;
 }
@@ -334,17 +350,18 @@ Projects
 	padding: 1em;
 }
 
-#projects p {
-	max-width: 800px;
-	text-align: center;
-	margin: 0 auto 35px;
-	padding: 0 20px;
-	line-height: 2;
-}
-
-@media(max-width:850px) {
+@media(max-width:950px) {
 	#projects .project {
 		flex-direction: column;
+	}
+}
+
+@media(max-width:550px) {
+	#projects .project-links {
+		flex-direction: column;
+		margin-top: 160px;
+		padding-bottom: 80px;
+		font-size: em
 	}
 }
 
