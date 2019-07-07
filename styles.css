@@ -159,6 +159,8 @@ HERO
 	justify-content: center;
 	background-image: url('img/top.jpg');
 	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	height: 50%;
 }
 
