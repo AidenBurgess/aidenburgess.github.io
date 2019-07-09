@@ -232,8 +232,8 @@ ABOUT
 }
 
 .about-img {
-	border: 4px solid #2196f3;
-	background-color: #2196f3;
+	height: 80px;
+	width: 80px;
 }
 
 .about-bio {
