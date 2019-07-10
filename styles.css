@@ -274,7 +274,8 @@ Projects
 }
 
 #projects .project {
-	border: 0.1em solid black;
+	/*	border: 0.1em solid black;*/
+	background: #f7f7f7;
 	margin: 1em;
 	display: flex;
 	flex-direction: row;
