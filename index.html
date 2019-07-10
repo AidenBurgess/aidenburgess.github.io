@@ -110,27 +110,8 @@
 		</ul>
 		<p>&copy; <script>
 				document.write(new Date().getFullYear());
-
 			</script> It sure is fun create websites.</p>
 	</footer>
 
-	<script>
-		jQuery(function($) {
-			// The speed of the scroll in milliseconds
-			var speed = 1000;
-			// Find links that are #anchors and scroll to them
-			$('a[href^=#]')
-				.not('.lp-pom-form .lp-pom-button')
-				.unbind('click.smoothScroll')
-				.bind('click.smoothScroll', function(event) {
-					event.preventDefault();
-					$('html, body').animate({
-						scrollTop: $($(this).attr('href')).offset().top - 50
-					}, speed);
-				});
-		});
-
-	</script>
-</body>
-
-</html>
+	<script src="js/smooth-scroll.js"></script>
+</body></html>
