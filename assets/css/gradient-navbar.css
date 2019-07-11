@@ -1,0 +1,53 @@
+#brand-logo {
+  font-size: 34px;
+}
+
+#app-navbar {
+  background: linear-gradient(120deg, #18bc9c, #5983e8);
+}
+
+#projects {
+  background: linear-gradient(240deg, #5983e8, #18bc9c);
+}
+
+body {
+  animation-duration: 0.5s;
+  transition-duration: 0.5s;
+  transition: 0.5s;
+}
+
+.card {
+  background-color: rgba(255,255,255,0.7);
+}
+
+#about {
+  background-color: rgb(74,93,103)!important;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #4792d3;
+}
+
+hr.star-light:after {
+  background-color: #4a5d67;
+}
+
+hr.star-dark:after {
+  background-color: #4a5d67;
+}
+
+.star-light.mb-5.project-star:after {
+  background-color: #4792d3;
+}
+
+hr.star-dark:after {
+  color: #ffffff;
+  background-color: #4a5d67;
+}
+
+.fa.fa-leaf.fa-2x {
+  background-image: url('../../assets/img/aiden-logo.svg');
+  content: "";
+}
+

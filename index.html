@@ -1,117 +1,326 @@
-<!DOCTYPE htrml>
+<!DOCTYPE html>
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Aiden Burgess Portfolio</title>
-	<link rel="shortcut icon" type="image/ico" href="img/aiden-logo.ico">
-	<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
-	<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
-	<link rel="stylesheet" href="styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-	<style>
-
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="assets/css/-Fixed-Navbar-start-with-transparency-background-BS4-.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar-1.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/sticky-dark-top-nav-with-dropdown.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="top">
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#top">Top</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- **************************************** -->
-	<div id="hero">
-		<div class="background-image"></div>
-		<h1>Aiden Burgess</h1>
-		<h3>2nd Year Software Engineering Student</h3>
-		<div class="btns">
-			<a href="https://github.com/AidenBurgess" class="btn" target="_blank"> <i class="far fa-eye"></i> See Projects</a>
-			<a href="cv.pdf" class="btn" target="_blank"> <i class="fa fa-download"></i> Download Resume</a>
-		</div>
-	</div>
-	<!-- **************************************** -->
-	<div id="about">
-		<h3 class="title">About Me</h3>
-		<div id="two-cols">
-			<div class="about-img"> <img src="img/aiden-logo.svg" alt="Aiden Logo"> </div>
-			<div class="about-bio">
-				<p>Currently in my second year of attending the University of Auckland, pursuing a Bachelor of Engineering (Honours). Specialising in Software Engineering. Student representative for my cohort. Personally interested in finance (investing) and comic book movies.</p>
-			</div>
-			<p>&nbsp;</p>
-		</div>
-	</div>
-	<!-- **************************************** -->
-	<section id="projects">
-		<h3 class="title">Personal Projects</h3>
-		<!--Compound Calculator-->
-		<div id="compound-calc" class="project">
-			<div class='project-img'><img src='img/compound.png'></div>
-			<div class="side-content">
-				<h4 class='project-title'>Compound Calculator
-				</h4>
-				<ul class='project-desc'>
-					<li>
-						Developed an advanced calculator used to calculate future savings using python. Has a graphical user interface and functionality to build annotated graphs.
-					</li>
-					<li>
-						Taught myself TkInter and MatplotLib to implement the graphical user interface.
-					</li>
-					<li>
-						Calculates complex combinations of interest rates, contribution amounds and timings, and years.
-					</li>
-				</ul>
-				<div class='project-links'>
-					<a href="https://www.github.com/aidenburgess/" class="btn" target="_blank"><i class="fas fa-code"></i> Source Code </a>
-					<a href="https://www.linkedin.com/in/aidenburgess/" class="btn" target="_blank"><i class="far fa-image"></i> View Project Photos </a>
-				</div>
+<body id="page-top">
+    <div>
+        <div>
+            <header>
+                <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white transparency border-bottom border-light" id="transmenu">
+                    <div class="container"><a class="navbar-brand text-success nav-link" href="#" style="color: rgb(128,128,128)!important;"><img class="fa-2x" src="assets/img/aiden-logo.svg" width="40px" height="40px" style="padding: 0px;margin: 0px 20px 0px 0px ;">&nbsp;AIDEN BURGESS</a>
+                        <button
+                            data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1"><span></span><span></span><span></span></button>
+                            <div class="collapse navbar-collapse" id="navcol-1">
+                                <ul class="nav navbar-nav ml-auto">
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#hero">Top</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#about">About</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#projects">Projects</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact Me</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center" data-bs-parallax-bg="true" id="hero" style="height: 500px;background-image: url(&quot;assets/img/daylight-grass-hill-724949.jpg&quot;);background-position: center;background-size: cover;">
+        <div class="container justify-content-center align-items-center align-content-center" style="opacity: 1;">
+            <h1 class="display-2 text-center" style="color: rgb(255,255,255);opacity: 1;font-size: 5rem;">Aiden Burgess</h1>
+            <h2 class="text-center font-weight-light mb-0" style="color: rgb(255,255,255)!important;opacity: 1;font-size: 2rem;">Second Year Software Engineering Student</h2>
+        </div>
+    </div>
+    <header></header>
+    <section id="about" class="bg-primary text-white mb-0">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">About</h2>
+            <hr class="star-light mb-5">
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Freelancer is a free bootstrap theme. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+            </div>
+            <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="#"><i class="fa fa-download mr-2"></i><span>Download Now!</span></a></div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2 class="text-uppercase text-center text-secondary mb-0" style="color: #ffffff!important;">Personal Projects</h2>
+        <hr class="star-light mb-5 project-star">
+        <div class="container" style="opacity: 1;background-color: transparent;">
+            <div class="row" data-aos="flip-up" data-aos-duration="500" data-aos-delay="200">
+                <div class="col-md-7 mb-4">
+                    <div class="card h-100"></div>
+                </div>
+                <div class="col-md-5 mb-4" style="opacity: 1;">
+                    <div class="card border-white h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Compound Calculator</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="#" style="background-color: #18bc9c;margin: 44px;"><i class="fas fa-code mr-2"></i><span>View Code</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="background-color: #ffffff;opacity: 0.75;">
+            <div class="row" data-aos="flip-up" data-aos-duration="500" data-aos-delay="200">
+                <div class="col-md-7 mb-4">
+                    <div class="card h-100"><a href="#"><img class="img-fluid" src="assets/img/cross.png"></a></div>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="card border-white h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Cross Game</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">View Project<br></button></div>
+                    </div>
+                </div>
+            </div>
+            <hr style="background-color: #ffffff;opacity: 0.75;">
+            <div class="row">
+                <div class="col-md-7 mb-4">
+                    <div class="card h-100"><a href="#"><img class="img-fluid" src="http://placehold.it/700x300"></a></div>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="card border-white h-100">
+                        <div class="card-body" style="background-color: rgba(0,0,0,0.1);">
+                            <h4 class="card-title">Project Three</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">View Project<br></button></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-7 mb-4">
+                    <div class="card h-100"><a href="#"><img class="img-fluid" src="http://placehold.it/700x300"></a></div>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="card border-white h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Project Four</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">View Project<br></button></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <section id="contact" style="background-color: #4a5d67;">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0" style="color: white!important;">Contact Me</h2>
+            <hr class="star-light mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="" placeholder="Name"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" rows="5"></textarea><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div id="success"></div>
+                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p>2215 John Daniel Drive<br>Clark, MO 65243</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase">Around the Web</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-dribbble fa-fw"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                    <p class="lead mb-0"><span>Freelance is a free to use, open source Bootstrap theme.&nbsp;</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright py-4 text-center text-white">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-md visible" id="app-navbar" style="position: sticky;">
+                <div class="container-fluid"><a class="navbar-brand" href="#"><i class="icon ion-ios-infinite" id="brand-logo"></i></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div
+                        class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#projects">Projects</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Third Item</a></li>
+                        </ul>
+                </div>
+        </div>
+        </nav><small>Copyright ©&nbsp;Brand 2018</small></div>
+    </div>
+    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cabin.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cake.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/circus.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/game.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/safe.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/submarine.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/freelancer.js"></script>
+    <script src="assets/js/-Fixed-Navbar-start-with-transparency-background-BS4-.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+</body>
 
-			</div>
-		</div>
-		<!--Cross Game-->
-		<div id='cross-game' class="project">
-			<div class='project-img'><img src="img/cross.png"></div>
-			<div class="side-content">
-				<h4 class='project-title'>Cross Game</h4>
-				<ul class='project-desc'>
-					<li>
-						Developed an advanced calculator used to calculate future savings using python. Has a graphical user interface and functionality to build annotated graphs.
-					</li>
-					<li>
-						Taught myself TkInter and MatplotLib to implement the graphical user interface.
-					</li>
-					<li>
-						Calculates complex combinations of interest rates, contribution amounds and timings, and years.
-					</li>
-				</ul>
-
-				<div class='project-links'>
-					<a href="https://www.github.com/aidenburgess/" class="btn" target="_blank"><i class="fas fa-code"></i> Source Code </a>
-					<a href="https://www.linkedin.com/in/aidenburgess/" class="btn" target="_blank"><i class="far fa-image"></i> View Project Photos </a>
-				</div>
-			</div>
-		</div>
-
-	</section>
-	<!-- **************************************** -->
-	<footer id="contact">
-		<ul>
-			<li><a href="https://www.linkedin.com/in/aidenburgess/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/AidenBurgess" target="_blank"><i class="fab fa-github"></i></a></li>
-			<li><a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
-			<li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
-
-		</ul>
-		<p>&copy; <script>
-				document.write(new Date().getFullYear());
-			</script> It sure is fun create websites.</p>
-	</footer>
-
-	<script src="js/smooth-scroll.js"></script>
-</body></html>
+</html>
